@@ -1,0 +1,127 @@
+/* #home-display {
+  background-image: url("placeholder.jpg");
+} */
+
+/* MAKE EVERYTHING SO FAR RESPONSIVE AND READ ABOUT RESPONSIZE DESIGN TOMORROW MORNING / NIGHT */
+
+/* design for mobile first to make it load faster
+breakpoints:
+Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {...} 
+
+/* Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...} 
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...}
+
+CAN HIDE ELEMENTS IN CERTAIN SCREENS AND ALSO CHANGE FOR PORTRAIT/LANDSCAPE
+
+*/
+
+/* navbar MAKE RESPONSIVE - actually fixed is okay bc want it to be set!! */
+/* change the toggle thing to collapse at tablet size*/
+
+/* Whole navbar */
+.navbar {
+  padding-top: 25px;
+  width: 100%;
+}
+
+/* Whole navbar */
+.navbar-fluid-width {
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+/* Collapse bars (hamburger icon) */
+.navbar-header .navbar-toggle .icon-bar {
+  background-color: black;
+  color: black;
+}
+
+/* Icon in the right corner */
+.navbar .navbar-header .navbar-brand {
+  color: black;
+  font-size: 40px;
+  font-style: italic;
+}
+
+/* Page names */
+.navbar .navbar-nav>li>a {
+  color: black;
+  font-size: 13px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+/* Home display - overrides container padding to span whole width */
+/* .home-display {
+  padding: 0em;
+} */
+
+/* make responsive height with 75% of screen max?? -- maybe wrap in body with 75% and navbar 25% */
+.home-display {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-display-image {
+  width: 100%;
+  max-height: 623px;
+  object-fit: cover;
+}
+
+.home-display-text {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  #home-display-title {
+    font-size: 50px;
+    color: white;
+  
+  }
+  
+  #home-display-subtitle {
+    font-size: 30px;
+    color: white;
+  }
+  
+  #home-display-subtitle #link {
+    color: white;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  #home-display-title {
+    font-size: 30px;
+    color: white;
+  
+  }
+  
+  #home-display-subtitle {
+    font-size: 20px;
+    color: white;
+  }
+  
+  #home-display-subtitle #link {
+    color: white;
+  }
+
+}
+/* MAKE RESPONSIVE */
+
