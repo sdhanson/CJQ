@@ -101,16 +101,22 @@ CAN HIDE ELEMENTS IN CERTAIN SCREENS AND ALSO CHANGE FOR PORTRAIT/LANDSCAPE
   }
   
   #home-display-subtitle #link {
-    color: white;
+    color: #f5f5f5;
+    /* text-decoration: underline solid #8db9ec; */
+    border-bottom: 3px solid #8db9ec;
   }
 
+  #home-display-subtitle #link:hover {
+    text-decoration: none;
+    border-bottom: 4px solid #8db9ec;
+    text-shadow: 0.125px 0.125px white;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   #home-display-title {
     font-size: 30px;
     color: white;
-  
   }
   
   #home-display-subtitle {
@@ -119,9 +125,76 @@ CAN HIDE ELEMENTS IN CERTAIN SCREENS AND ALSO CHANGE FOR PORTRAIT/LANDSCAPE
   }
   
   #home-display-subtitle #link {
-    color: white;
+    color: #f5f5f5;
+    /* text-decoration: underline solid #8db9ec; */
+    border-bottom: 3px solid #8db9ec;
   }
-
+  #home-display-subtitle #link:hover {
+    text-decoration: none;
+    border-bottom: 4px solid #8db9ec;
+    text-shadow: 0.125px 0.125px white;
+  }
 }
+
+@media only screen and (min-width: 768px) {
+
+.img-thumbnail {
+  border: none;
+  padding-top: 100px;
+  padding-right: 20px;
+}
+
+.thumbnail {
+  border: none;
+  padding-top: 40%;
+  text-align: left;
+  padding-left: 10%;
+  font-size: 40px;
+}
+
+.thumbnail-left {
+  text-align: right;
+  padding-right: 10%;
+  padding-left: 0%;
+}
+
+.home-img-links {
+  font-size: 25px;
+  margin: 0px;
+  color: black; 
+}
+
+/* CHANGE LINKS TO HAVE ANIMATION OF ARROW THAT EXPLAINS AND MAKES THE IMAGE ZOOM */
+.home-img-links:hover {
+  text-decoration: none;
+  color: #8db9ec;
+  text-shadow: 0.125px 0.125px black;
+}
+
+.img-wrapper {
+	display: inline-block;
+	overflow: hidden;
+}
+
+.img-wrapper img {
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    vertical-align: middle;
+}
+
+.img-wrapper img:hover {
+	transform:scale(1.125);
+    -ms-transform:scale(1.125); /* IE 9 */
+    -moz-transform:scale(1.125); /* Firefox */
+    -webkit-transform:scale(1.125); /* Safari and Chrome */
+    -o-transform:scale(1.125); /* Opera */
+}
+}
+
 /* MAKE RESPONSIVE */
+
+/* Broad styling */
 
