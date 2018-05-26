@@ -64,11 +64,6 @@ CAN HIDE ELEMENTS IN CERTAIN SCREENS AND ALSO CHANGE FOR PORTRAIT/LANDSCAPE
   margin-bottom: 2px;
 }
 
-/* Home display - overrides container padding to span whole width */
-/* .home-display {
-  padding: 0em;
-} */
-
 /* make responsive height with 75% of screen max?? -- maybe wrap in body with 75% and navbar 25% */
 .home-display {
   position: relative;
@@ -88,6 +83,67 @@ CAN HIDE ELEMENTS IN CERTAIN SCREENS AND ALSO CHANGE FOR PORTRAIT/LANDSCAPE
   width: 100%;
 }
 
+/* shop line styling */
+.home-shop-text {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 175px;
+  background-color: #5F7078;
+
+  color: white;
+  padding-top: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer .author {
+  padding-top: 2%;
+  font-size: 15px;
+}
+
+.footer .middle {
+  font-size: 25px;
+}
+
+.footer-2 {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: #1279AD;
+
+  padding-top: 12px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.footer-3 {
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  height: 7px;
+  background-color: #13AEFC;
+}
+
+.fa-facebook-f {
+  color: white;
+}
+
+.fa-angle-right {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+}
+
+
 @media only screen and (min-width: 600px) {
   #home-display-title {
     font-size: 50px;
@@ -103,12 +159,12 @@ CAN HIDE ELEMENTS IN CERTAIN SCREENS AND ALSO CHANGE FOR PORTRAIT/LANDSCAPE
   #home-display-subtitle #link {
     color: #f5f5f5;
     /* text-decoration: underline solid #8db9ec; */
-    border-bottom: 3px solid #8db9ec;
+    border-bottom: 3px solid #5499C7;
   }
 
   #home-display-subtitle #link:hover {
     text-decoration: none;
-    border-bottom: 4px solid #8db9ec;
+    border-bottom: 4px solid #5499C7;
     text-shadow: 0.125px 0.125px white;
   }
 }
@@ -127,11 +183,11 @@ CAN HIDE ELEMENTS IN CERTAIN SCREENS AND ALSO CHANGE FOR PORTRAIT/LANDSCAPE
   #home-display-subtitle #link {
     color: #f5f5f5;
     /* text-decoration: underline solid #8db9ec; */
-    border-bottom: 3px solid #8db9ec;
+    border-bottom: 3px solid #5499C7;
   }
   #home-display-subtitle #link:hover {
     text-decoration: none;
-    border-bottom: 4px solid #8db9ec;
+    border-bottom: 4px solid #5499C7;
     text-shadow: 0.125px 0.125px white;
   }
 }
@@ -149,7 +205,7 @@ CAN HIDE ELEMENTS IN CERTAIN SCREENS AND ALSO CHANGE FOR PORTRAIT/LANDSCAPE
   padding-top: 40%;
   text-align: left;
   padding-left: 10%;
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .thumbnail-left {
@@ -167,8 +223,19 @@ CAN HIDE ELEMENTS IN CERTAIN SCREENS AND ALSO CHANGE FOR PORTRAIT/LANDSCAPE
 /* CHANGE LINKS TO HAVE ANIMATION OF ARROW THAT EXPLAINS AND MAKES THE IMAGE ZOOM */
 .home-img-links:hover {
   text-decoration: none;
-  color: #8db9ec;
-  text-shadow: 0.125px 0.125px black;
+  color: #2471A3;
+  text-shadow: 0.125px 0.125px #2471A3;
+}
+
+.home-img-links:hover .fa-angle-right {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* MAKE THE SECOND LINK NOT DO THE WEIRD THING */
+.thumbnail-left .home-img-links:hover .fa-angle-right {
+  padding-right: 0px;
+  padding-left: 15px;
 }
 
 .img-wrapper {
@@ -194,7 +261,128 @@ CAN HIDE ELEMENTS IN CERTAIN SCREENS AND ALSO CHANGE FOR PORTRAIT/LANDSCAPE
 }
 }
 
-/* MAKE RESPONSIVE */
+@media only screen and (max-width: 768px) {
 
+  .img-1 {
+    padding-top: 7%;
+  }
+
+  .img-thumbnail {
+    border: none;
+    padding-top: 0px;
+  }
+  
+  .thumbnail {
+    border: none;
+    padding-top: 3%;
+    text-align: left;
+    font-size: 40px;
+  }
+  
+  .home-img-links {
+    font-size: 20px;
+    color: black;
+  }
+  
+  /* CHANGE LINKS TO HAVE ANIMATION OF ARROW THAT EXPLAINS AND MAKES THE IMAGE ZOOM */
+  .home-img-links:hover {
+    text-decoration: none;
+    color: #2471A3;
+    text-shadow: 0.125px 0.125px #2471A3;
+  }
+
+  /* MAKE THE SECOND LINK NOT DO THE WEIRD THING */
+  .home-img-links:hover .fa-angle-right {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .img-wrapper {
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .img-wrapper img {
+    -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease;
+      vertical-align: middle;
+  }
+  
+  .img-wrapper img:hover {
+    transform:scale(1.125);
+      -ms-transform:scale(1.125); /* IE 9 */
+      -moz-transform:scale(1.125); /* Firefox */
+      -webkit-transform:scale(1.125); /* Safari and Chrome */
+      -o-transform:scale(1.125); /* Opera */
+  }
+  }
+
+  @media only screen and (max-width: 600px) {
+
+  .img-1 {
+    padding-top: 7%;
+  }
+
+  .img-thumbnail {
+    border: none;
+    padding-top: 0px;
+  }
+  
+  .thumbnail {
+    border: none;
+    padding-top: 3%;
+    text-align: left;
+    font-size: 30px;
+  }
+  
+  .home-img-links {
+    font-size: 20px;
+    margin: 0px;
+    color: black;
+    padding-bottom: 10px;
+  }
+  
+  /* CHANGE LINKS TO HAVE ANIMATION OF ARROW THAT EXPLAINS AND MAKES THE IMAGE ZOOM */
+  .home-img-links:hover {
+    text-decoration: none;
+    color: #2471A3;
+    text-shadow: 0.125px 0.125px #2471A3;
+  }
+
+  /* MAKE THE SECOND LINK NOT DO THE WEIRD THING */
+  .home-img-links:hover .fa-angle-right {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .img-wrapper {
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .img-wrapper img {
+    -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease;
+      vertical-align: middle;
+  }
+  
+  .img-wrapper img:hover {
+    transform:scale(1.125);
+      -ms-transform:scale(1.125); /* IE 9 */
+      -moz-transform:scale(1.125); /* Firefox */
+      -webkit-transform:scale(1.125); /* Safari and Chrome */
+      -o-transform:scale(1.125); /* Opera */
+  }
+
+  }
+/* MAKE RESPONSIVE */
 /* Broad styling */
+
+/* REMOVE DUPLICATE CODE FOR THE DIFFERENT SCREENS */
 

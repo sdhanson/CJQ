@@ -8,33 +8,34 @@
   <meta name="description" content="The official website of Charles John Quarto, songwriter-poet.">
   <meta name="author" content="Sara Hanson">
   <script src="main.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="home.css" />
 </head>
 <body>
 <nav class="navbar">
-    <div class="container-fluid navbar-fluid-width">
-      <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="index.html" class="navbar-brand">CJQ</a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-nav-demo">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">WRITTEN WORKS</a></li>
-          <li><a href="#">MUSIC</a></li>
-          <li><a href="#">PHOTOGRAPHY</a></li>
-          <li><a href="#">SHOP</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </div>
+  <div class="container-fluid navbar-fluid-width">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html" class="navbar-brand">CJQ</a>
     </div>
-  </nav>
+    <div class="collapse navbar-collapse" id="bs-nav-demo">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">WRITTEN WORKS</a></li>
+        <li><a href="#">MUSIC</a></li>
+        <li><a href="#">PHOTOGRAPHY</a></li>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <div class="home-display text-left">
     <img class="home-display-image" src="placeholder.jpg"/>
@@ -46,7 +47,7 @@
 
 <div class="container">
   <div class="col-sm-6 col-xs-12">
-    <div class="img-wrapper">
+    <div class="img-wrapper img-1">
       <img class="img-thumbnail img-responsive" src="music.jpg"/>
     </div>
   </div>
@@ -54,24 +55,25 @@
   <div class="col-sm-6 col-xs-12">
     <div class="thumbnail">
       <p>Music and Discography</p>
-      <a class="home-img-links" href="#">View More</a>
+      <a class="home-img-links" href="#">View More <i class="fas fa-angle-right"></i></a>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="col-sm-6 col-xs-12">
+  <div class="col-sm-6 col-sm-push-6 col-xs-12">
+      <div class="img-wrapper">
+        <img alt="" class="img-thumbnail img-responsive" src="book.jpg"/>
+      </div>
+    </div>
+
+  <div class="col-sm-6 col-sm-pull-6 col-xs-12 ">
     <div class="thumbnail thumbnail-left">
       <p>Poems and Collections</p>
-      <p><a class="home-img-links" href="#">View More</a></p>
+      <p><a class="home-img-links" href="#">View More  <i class="fas fa-angle-right fa-angle-right-left"></i></a></p>
     </div>
   </div>
-  
-  <div class="col-sm-6 col-xs-12">
-    <div class="img-wrapper">
-      <img alt="" class="img-thumbnail img-responsive" src="book.jpg"/>
-    </div>
-  </div>
+
 </div>
 
 <div class="container">
@@ -84,10 +86,67 @@
   <div class="col-sm-6 col-xs-12">
     <div class="thumbnail">
       <p>Photo Gallery</p>
-      <a class="home-img-links" href="#">View More</a>
+      <a class="home-img-links" href="#">View More <i class="fas fa-angle-right"></i></a>
     </div>
   </div>
 </div>
+
+
+<div class="container container-3">
+
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="img-wrapper">
+      <img class="img-thumbnail img-responsive" src="album.jpg"/>
+    </div>
+    <a class="home-shop-text" href="#">Hobo Carousel</a>
+  </div>
+
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="img-wrapper">
+      <img class="img-thumbnail img-responsive" src="album.jpg"/>
+    </div>
+    <a class="home-shop-text" href="#">POETRY COLLECTION NAME</a>
+  </div>
+
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="img-wrapper">
+      <img class="img-thumbnail img-responsive" src="album.jpg"/>
+    </div>
+    <a class="home-shop-text" href="#">POETRY COLLECTION NAME</a>
+  </div>
+
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="img-wrapper">
+      <img class="img-thumbnail img-responsive" src="album.jpg"/>
+    </div>
+    <a class="home-shop-text" href="#">POETRY COLLECTION NAME</a>
+  </div>
+
+</div>
+
+
+<!-- FOOTERS -->
+<footer class="footer-3">
+  <div class="container">
+  </div>
+</footer>
+
+<footer class="footer-2">
+  <div class="container">
+      <i class="fab fa-facebook-f"></i>
+  </div>
+</footer>
+
+
+<footer class="footer">
+  <div class="container">
+      <div class="col-sm-4 col-sm-push-4 col-xs-12 middle">Charles John Quarto</div>
+    <div class="col-sm-4 col-sm-pull-4 col-xs-12">Nashville, TN</div>
+
+    <div class="col-sm-4 col-xs-12">Contact</div>
+    <div class="col-xs-12 author">Website by Sara Hanson</div>
+  </div>
+</footer>
 
   
 
