@@ -1,21 +1,35 @@
 @media only screen and (min-width: 768px) {
-  .container {
-    width: 50%;
+  .container-5 {
+    width: 75%;
+  }
+
+  #photos {
+    padding-top: 75px;
+  }
+
+  #po-text {
+    text-align: right;
   }
 }
 @media only screen and (max-width: 768px) {
-  .container {
+  .container-5 {
     border-radius: 5px;
     background-color: white;
     width: 75%;
   }
+  #po-text {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .container {
+  .container-5 {
     border-radius: 5px;
     background-color: white;
     width: 100%;
+  }
+  #po-text {
+    text-align: center;
   }
 }
 
@@ -32,10 +46,29 @@ h2 {
   padding-bottom: 10px;
 }
 
-button {
+.button-submit {
   width: 8em;
   height: 30px;
   background-color: white;
-  border: 1px solid black;
-  color: black;
+  border: 1px solid #A8A8A8;
+  color:	#686868;
+  border-radius: 4px;
+}
+
+.button-submit:hover {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  padding-top: 20px;
+}
+
+#po-text {
+  font-size: 20px;
+  padding-top: 5px;
 }

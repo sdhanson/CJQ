@@ -12,7 +12,10 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="home.css" />
 </head>
+
 <body>
+
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="container-fluid navbar-fluid-width">
     <div class="navbar-header">
@@ -29,7 +32,7 @@
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">WRITTEN WORKS</a></li>
         <li><a href="#">MUSIC</a></li>
-        <li><a href="#">PHOTOGRAPHY</a></li>
+        <li><a href="gallery.html">PHOTOGRAPHY</a></li>
         <li><a href="#">SHOP</a></li>
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
@@ -37,14 +40,16 @@
   </div>
 </nav>
 
+<!-- MAIN IMAGE AND TEXT -->
 <div class="home-display text-left">
     <img class="home-display-image" src="placeholder.jpg"/>
     <div class="home-display-text">
         <p id="home-display-title">Charles John Quarto: Songwriter-Poet</p>
-        <p id="home-display-subtitle">New Collection Out Now. <a id="link" href="#">Shop All Songs .</a></p>
+        <p id="home-display-subtitle">New Collection Out Now. <a id="link" href="#">Shop All Songs.</a></p>
     </div>
 </div>
 
+<!-- HOME THREE PICTURES -->
 <div class="container">
   <div class="col-sm-6 col-xs-12">
     <div class="img-wrapper img-1">
@@ -54,7 +59,7 @@
   
   <div class="col-sm-6 col-xs-12">
     <div class="thumbnail">
-      <p>Music and Discography</p>
+      <div class="test">Music and Discography</div>
       <a class="home-img-links" href="#">View More <i class="fas fa-angle-right"></i></a>
     </div>
   </div>
@@ -69,8 +74,8 @@
 
   <div class="col-sm-6 col-sm-pull-6 col-xs-12 ">
     <div class="thumbnail thumbnail-left">
-      <p>Poems and Collections</p>
-      <p><a class="home-img-links" href="#">View More  <i class="fas fa-angle-right fa-angle-right-left"></i></a></p>
+      <div>Poems and Collections</div>
+      <a class="home-img-links" href="#">View More  <i class="fas fa-angle-right fa-angle-right-left"></i></a>
     </div>
   </div>
 
@@ -85,67 +90,64 @@
     
   <div class="col-sm-6 col-xs-12">
     <div class="thumbnail">
-      <p>Photo Gallery</p>
-      <a class="home-img-links" href="#">View More <i class="fas fa-angle-right"></i></a>
+      <div>Photo Gallery</div>
+      <a class="home-img-links" href="gallery.html">View More <i class="fas fa-angle-right"></i></a>
     </div>
   </div>
 </div>
 
 
+<!-- SHOP CARUSEL -->
 <div class="container container-3">
 
   <div class="col-md-3 col-sm-6 col-xs-12">
-    <div class="img-wrapper">
-      <img class="img-thumbnail img-responsive" src="album.jpg"/>
-    </div>
-    <a class="home-shop-text" href="#">Hobo Carousel</a>
+    <a class="home-shop" href=#>
+      <div class="img-wrapper">
+        <img class="img-thumbnail img-responsive" src="album.jpg"/>
+      </div>
+      <div class="home-shop-text"> POETRY COLLECTION NAME </div>
+    </a>
   </div>
 
   <div class="col-md-3 col-sm-6 col-xs-12">
-    <div class="img-wrapper">
-      <img class="img-thumbnail img-responsive" src="album.jpg"/>
-    </div>
-    <a class="home-shop-text" href="#">POETRY COLLECTION NAME</a>
+    <a class="home-shop" href=#>
+      <div class="img-wrapper">
+        <img class="img-thumbnail img-responsive" src="album.jpg"/>
+      </div>
+      <div class="home-shop-text"> POETRY COLLECTION NAME </div>
+    </a>
   </div>
 
   <div class="col-md-3 col-sm-6 col-xs-12">
-    <div class="img-wrapper">
-      <img class="img-thumbnail img-responsive" src="album.jpg"/>
-    </div>
-    <a class="home-shop-text" href="#">POETRY COLLECTION NAME</a>
+    <a class="home-shop" href=#>
+      <div class="img-wrapper">
+        <img class="img-thumbnail img-responsive" src="album.jpg"/>
+      </div>
+      <div class="home-shop-text"> POETRY COLLECTION NAME </div>
+    </a>
   </div>
 
   <div class="col-md-3 col-sm-6 col-xs-12">
-    <div class="img-wrapper">
-      <img class="img-thumbnail img-responsive" src="album.jpg"/>
-    </div>
-    <a class="home-shop-text" href="#">POETRY COLLECTION NAME</a>
+    <a class="home-shop" href=#>
+      <div class="img-wrapper">
+        <img class="img-thumbnail img-responsive" src="album.jpg"/>
+      </div>
+      <div class="home-shop-text"> POETRY COLLECTION NAME </div>
+    </a>
   </div>
 
 </div>
 
 
 <!-- FOOTERS -->
-<footer class="footer-3">
-  <div class="container">
-  </div>
-</footer>
-
-<footer class="footer-2">
-  <div class="container">
-      <i class="fab fa-facebook-f"></i>
-  </div>
-</footer>
-
-
 <footer class="footer">
   <div class="container">
-      <div class="col-sm-4 col-sm-push-4 col-xs-12 middle">Charles John Quarto</div>
-    <div class="col-sm-4 col-sm-pull-4 col-xs-12">Nashville, TN</div>
-
-    <div class="col-sm-4 col-xs-12">Contact</div>
+    <div class="col-sm-4 col-sm-push-4 col-xs-12 middle">Charles John Quarto</div>
+    <div class="col-sm-4 col-sm-pull-4 col-xs-12 side">Nashville, TN</div>
+    <div class="col-sm-4 col-xs-12 side"><a href="contact.html">Contact</a></div>
     <div class="col-xs-12 author">Website by Sara Hanson</div>
   </div>
+  <i class="fab fa-facebook-f"></i>
 </footer>
 
   
