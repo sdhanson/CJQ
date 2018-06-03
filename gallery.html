@@ -9,7 +9,9 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="gallery.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="home.css" />
-  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="gallery.js"></script>
 </head>
 <body>
 
@@ -38,27 +40,65 @@
   </div>
 </nav>
 
-<div class="container">
-<div id="photos">
-    <img src="book.jpg">
-    <img src="music.jpg">
-    <img src="album.jpg">
-    <img src="camera.jpg">
-    <img src="water.jpg">
-    <img src="placeholder.jpg">
-    <img src="book.jpg">
-    <img src="music.jpg">
-    <img src="album.jpg">
-    <img src="camera.jpg">
-    <img src="water.jpg">
-    <img src="placeholder.jpg">
-    <img src="book.jpg">
-    <img src="music.jpg">
-    <img src="album.jpg">
-    <img src="camera.jpg">
-    <img src="water.jpg">
-    <img src="placeholder.jpg">
+<div class="container container-photos">
+  <div id="photos">
+    <img data-toggle="modal" data-target="#myModal" src="book.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="water.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="placeholder.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="camera.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="water.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="placeholder.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="book.jpg">
+    <img data-toggle="modal" data-target="#myModal"  src="music.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="album.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="book.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="music.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="music.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="album.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="camera.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="album.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="camera.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="water.jpg">
+    <img data-toggle="modal" data-target="#myModal" src="placeholder.jpg">
+  </div>
 </div>
+
+<!-- MODAL CAROUSEL -->
+<!-- CREATE MODAL FIRST -->
+<div class="container container-modal">
+  <div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="PHOTOGRAPHY">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" tab-index="0">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="icon" aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div id="myCarousel" class="carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="item carousel-item active">
+                    <img class="d-block img-fluid" src="album.jpg" alt="First slide">
+                  </div>
+                  <div class="item carousel-item">
+                    <img class="d-block img-fluid" src="album.jpg" alt="Second slide">
+                  </div>
+                  <div class="item carousel-item">
+                      <img class="d-block img-fluid" src="music.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">&lt;</a>
+                <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">&gt;</a>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- FOOTERS -->
@@ -72,8 +112,6 @@
   <i class="fab fa-facebook-f"></i>
 </footer>
 
-<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 </html>
