@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="gallery.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="home.css" />
   <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="gallery.js"></script>
 </head>
 <body>
@@ -76,11 +76,6 @@
         </div>
         <div class="modal-body">
             <div id="myCarousel" class="carousel" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                  </ol>
                 <div class="carousel-inner" role="listbox">
                   <div class="item carousel-item active">
                     <img class="d-block img-fluid" src="album.jpg" alt="First slide">
@@ -92,8 +87,8 @@
                       <img class="d-block img-fluid" src="music.jpg" alt="Third slide">
                     </div>
                 </div>
-                <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">&lt;</a>
-                <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">&gt;</a>
+                <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev"><i class="fas fa-angle-left"></i></a>
+                <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next"><i class="fas fa-angle-right"></i></a>
               </div>
         </div>
       </div>
@@ -104,12 +99,47 @@
 <!-- FOOTERS -->
 <footer class="footer">
   <div class="container">
-    <div class="col-sm-4 col-sm-push-4 col-xs-12 middle">Charles John Quarto</div>
-    <div class="col-sm-4 col-sm-pull-4 col-xs-12 side">Nashville, TN</div>
-    <div class="col-sm-4 col-xs-12 side"><a href="contact.html">Contact</a></div>
-    <div class="col-xs-12 author">Website by Sara Hanson</div>
+    <div class="col-md-3 col-sm-6 col-xs-6">
+      <div class="footer-section">
+        Shop
+      </div>
+      <div class="footer-sub-section">
+       <div><a href="#">Music</a></div> 
+       <div> <a href="#">Poems</a></div> 
+       <div><a href="#">Collections</a></div> 
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-6">
+      <div class="footer-section">
+        About
+      </div>
+      <div class="footer-sub-section">
+        <div><a href="#">Bio</a></div> 
+        <div><a href="#"><i class="fas fa-thumbtack"></i> Nashville, TN</a></div> 
+        <div><a href="#">Charles John Quarto</a></div> 
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-6">
+      <div class="footer-section">
+        Connect
+      </div>
+      <div class="footer-sub-section">
+          <div><a href="contact.html">Contact</a></div> 
+          <div><a href="#"><i class="fab fa-facebook"></i> Facebook</a></div> 
+          <div><a href="#">Collections</a></div> 
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-6">
+      <div class="footer-section">
+        Website by Sara Hanson
+      </div>
+      <div class="footer-sub-section">
+        <div><a href="https://github.com/sdhanson"><i class="fab fa-github"></i> Github</a></div> 
+        <div><a href="https://www.linkedin.com/in/sara-hanson-usc/"><i class="fab fa-linkedin"></i> LinkedIn</a></div> 
+      </div>
+    </div>
   </div>
-  <i class="fab fa-facebook-f"></i>
+
 </footer>
 
 

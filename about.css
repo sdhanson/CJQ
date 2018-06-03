@@ -1,0 +1,68 @@
+/* algin image to the right and then put in the info and style add padding make the content take up less */
+
+.container-bio {
+  width: 80%;
+}
+
+.bio-image {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.bio-text {
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+strong {
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  .pull-right-sm {
+      float: right;
+  }
+}
+
+@media (max-width: 992px) {
+  .bio-image {
+    text-align: center;
+
+  }
+  .pull-right-sm {
+    display: inline-block;
+  }
+}
+
+.button {
+  background-color: white;
+  border: none;
+  border-radius: 2px;
+  color: black;
+  padding: 1px;
+  margin: 0px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  width: 100%;
+}
+
+.fa-plus {
+  float: right;
+  font-size: 12px;
+}
+
+.button:focus,
+.button:active:focus{
+    outline:none;
+}
+
+.button:focus .fa-plus,
+.button:active:focus .fa-plus {
+  color: #5499C7;
+}
