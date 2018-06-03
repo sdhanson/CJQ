@@ -11,7 +11,8 @@
 
 .bio-text {
   padding-left: 20px;
-  padding-top: 40px;
+  padding-top: 35px;
+  font-size: 15px;
 }
 
 p {
@@ -48,7 +49,7 @@ strong {
   text-align: left;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 15px;
   width: 100%;
 }
 
@@ -64,5 +65,13 @@ strong {
 
 .button:focus .fa-plus,
 .button:active:focus .fa-plus {
+  color: #5499C7;
+}
+
+a {
+  color: #5499C7;
+}
+
+a:hover {
   color: #5499C7;
 }
