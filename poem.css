@@ -1,0 +1,33 @@
+.container-poem {
+  position: relative;
+  width: 90%;
+  background-color: white;
+
+  color: black;
+  padding-top: 25px;
+  font-size: 15px;
+  text-align: left;
+
+}
+
+.container-poem .title {
+  color: #5499C7;
+  font-size: 25px;
+}
+
+.container-back {
+  font-size: 15px;
+}
+
+a {
+  color: black;
+}
+
+.back {
+  margin: 5px;
+}
+
+a:hover {
+  color: #5499C7;
+  text-decoration: none;
+}

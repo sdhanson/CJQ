@@ -8,7 +8,13 @@
   }
 
   #po-text {
-    text-align: right;
+    text-align: left;
+  }
+  #photo-text {
+    text-align: left;
+  }
+  h3 {
+    text-align: left;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -18,6 +24,12 @@
     width: 75%;
   }
   #po-text {
+    text-align: center;
+  }
+  #photo-text {
+    text-align: center;
+  }
+  h3 {
     text-align: center;
   }
 }
@@ -31,6 +43,16 @@
   #po-text {
     text-align: center;
   }
+  #photo-text {
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
+}
+
+form {
+  padding-top: 20px;
 }
 
 input[type=text], select, textarea {
@@ -40,9 +62,8 @@ input[type=text], select, textarea {
   border-radius: 5px;
 }
 
-h2 {
-  font-size: 45px;
-  text-align: center;
+h3 {
+  font-size: 30px;
   padding-bottom: 10px;
 }
 
@@ -69,6 +90,6 @@ h2 {
 }
 
 #po-text {
-  font-size: 20px;
+  font-size: 15px;
   padding-top: 5px;
 }
