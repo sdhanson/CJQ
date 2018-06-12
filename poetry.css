@@ -19,6 +19,7 @@
 
 .container-poem a:hover {
   color: #5499C7;
+  text-decoration: none;
 }
 
 .container-poem .tag {
@@ -68,19 +69,46 @@
 .container-search .title {
   font-size: 45px;
   padding-left: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 @media screen and (max-width: 768px) {
   .container-search .title {
-    font-size: 40px;
-  }
-
-  .input-group {
-    float: left;
+    font-size: 35px;
+    padding-left: 0px;
   }
 
   .container-search input[type=text] {
     margin-left: 0px;
   }
+
+  .container-search button {
+    padding: 6px 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-search .title {
+    font-size: 25px;
+  }
+
+  .container-search input[type=text]  {
+    padding: 3px;
+
+    font-size: 14px;
+  
+  }
+
+  .container-search button {
+    padding: 1.75px 3px;
+  }
+}
+
+.container-jump {
+  width: 100%;
+  position: relative;
+}
+
+#collapse-jump {
+  float: right;
 }

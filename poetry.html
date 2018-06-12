@@ -9,7 +9,6 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="poetry.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="home.css" />
-  <script type="text/javascript" src="about.js"></script>
 </head>
 <body>
 
@@ -28,14 +27,19 @@
     <div class="collapse navbar-collapse" id="bs-nav-demo">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="about.html">ABOUT</a></li>
-        <li><a data-toggle="collapse" href="#sub-list">WRITTEN WORKS</a></li>
-        <!-- <div class="collapse" id="sub-list">
-          <ul ul class="nav">
-              <li><a href="#">POETRY</a></li>
-              <li><a href="#">LYRICS</a></li>
-            </ul>
-        </div> -->
-        <li><a href="#">MUSIC</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">WRITTEN WORKS</a>
+          <div class="dropdown-menu">
+            <div>
+              <a class="dropdown-item" href="poetry.html">POETRY</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div>
+              <a class="dropdown-item" href="#">SONGS</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="discography.html">MUSIC</a></li>
         <li><a href="gallery.html">PHOTOGRAPHY</a></li>
         <li><a href="#">SHOP</a></li>
         <li><a href="contact.html">CONTACT</a></li>
@@ -46,8 +50,8 @@
 
 <div class="container">
   <div class="container container-search">
-    <span class="col-sm-6 title">Explore Poems</span>
-    <form class="col-sm-6" action="/">
+    <span class="col-sm-6 col-xs-4 title">Explore Poems</span>
+    <form class="col-sm-6 col-xs-8" action="/">
       <div class="input-group">
           <input type="text" placeholder="Search" name="search">
           <button type="submit"><i class="fas fa-search"></i></button>
@@ -95,17 +99,18 @@
   </div>
 </div>
 
+
 <div class="container">
-  <div class="container containver-nav">
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <div class="container container-nav container-jump">
+      <div class="navbar-collapse" id="collapse-jump">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jump To <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li id="ex1"><a href="#">Example 1</a></li>
-                <li id="ex2"><a href="#">Example 2</a></li>
-                <li id="ex3"><a href="#">Example 3</a></li>
-                <li id="ex5"><a href="#">Example 4</a></li>
+                <li id="ex1"><a href="#">1</a></li>
+                <li id="ex2"><a href="#">2</a></li>
+                <li id="ex3"><a href="#">3</a></li>
+                <li id="ex5"><a href="#">4</a></li>
               </ul>
             </li>
           </ul>

@@ -63,6 +63,27 @@ CAN HIDE ELEMENTS IN CERTAIN SCREENS AND ALSO CHANGE FOR PORTRAIT/LANDSCAPE
   margin-bottom: 2px;
 }
 
+.nav-item {
+  border-radius: 2px;
+}
+
+.navbar ul a {
+  color: black;
+}
+
+.navbar ul a.dropdown-item {
+  margin: 10px;
+}
+
+.navbar ul a:hover.dropdown-item {
+  color: #5499C7;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  color: #5499C7;
+}
+
 /* make responsive height with 75% of screen max?? -- maybe wrap in body with 75% and navbar 25% */
 .home-display {
   position: relative;
@@ -467,4 +488,5 @@ CAN HIDE ELEMENTS IN CERTAIN SCREENS AND ALSO CHANGE FOR PORTRAIT/LANDSCAPE
 /* Broad styling */
 
 /* REMOVE DUPLICATE CODE FOR THE DIFFERENT SCREENS */
+
 

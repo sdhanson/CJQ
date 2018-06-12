@@ -1,0 +1,50 @@
+.container-title {
+  text-align: center;
+  font-size: 55px;
+  padding-top: 5px;
+  padding-left: 0px;
+}
+
+.dropdown-button {
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+
+.dropdown-button-1 {
+  float: right;
+  padding-right: 35px;
+  padding-left: 35px;
+  margin-right: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-button-2 {
+  float: left;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-left: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.container-disc {
+  text-align: center;
+  padding-top: 0px;
+}
+
+.album-text {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.album:hover {
+  text-decoration: none;
+  color: black;
+  padding-top: 0px;
+}
+
+.album-text {
+  font-size: 20px;
+  padding-bottom: 20px;
+}

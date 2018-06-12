@@ -15,30 +15,41 @@
 </head>
 <body>
 
-<!-- MAKE NAVBAR ACTUALLY WORK -->
+<!-- NAVBAR -->
 <nav class="navbar">
-  <div class="container-fluid navbar-fluid-width">
-    <div class="navbar-header navbar-header-button">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="index.html" class="navbar-brand">CJQ</a>
+    <div class="container-fluid navbar-fluid-width">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">CJQ</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-nav-demo">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="about.html">ABOUT</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">WRITTEN WORKS</a>
+            <div class="dropdown-menu">
+              <div>
+                <a class="dropdown-item" href="poetry.html">POETRY</a>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div>
+                <a class="dropdown-item" href="#">SONGS</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="discography.html">MUSIC</a></li>
+          <li><a href="gallery.html">PHOTOGRAPHY</a></li>
+          <li><a href="#">SHOP</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="bs-nav-demo">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="#">WRITTEN WORKS</a></li>
-        <li><a href="#">MUSIC</a></li>
-        <li><a href="gallery.html">PHOTOGRAPHY</a></li>
-        <li><a href="#">SHOP</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
 
 <div class="container container-photos">
   <div id="photos">
