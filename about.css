@@ -3,6 +3,11 @@
 .container-bio {
   width: 80%;
 }
+.container-title {
+  text-align: center;
+  font-size: 55px;
+  padding-top: 5px;
+}
 
 .bio-image {
   padding-bottom: 20px;
